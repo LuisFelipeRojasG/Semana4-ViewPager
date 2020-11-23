@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/contactoBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="429dp"
+            android:elevation="@dimen/elevation_bar"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="@string/nombre_ContactoBar"
+                android:paddingTop="@dimen/top_titulo_bar"
+                android:textStyle="bold"
+                android:textSize="@dimen/nombre_mascota"
+                android:textColor="#fff"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/tfeNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactoBar"
+            android:layout_marginTop="20dp"
+            android:hint="@string/nombreContacto"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/tfeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tfeNombreCompleto"
+            android:layout_marginTop="20dp"
+            android:hint="@string/emailContacto"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/tfeMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tfeEmail"
+            android:layout_marginTop="20dp"
+            android:hint="@string/mensajeContacto"
+
+            />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tfeMensaje"
+            android:layout_marginTop="20dp"
+            android:text="@string/enviarComentario"
+
+           />
+
+</RelativeLayout>

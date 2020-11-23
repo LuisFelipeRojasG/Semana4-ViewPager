@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascotas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_card"
+    card_view:cardElevation="@dimen/elevation_card"
+    card_view:cardCornerRadius="@dimen/corner_radius_cardview"
+    >
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_card"
+        android:layout_below="@+id/miActionBar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+
+            <ImageView
+                android:id="@+id/ivImagenMascotaCV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/perro_01"
+                />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/espacio_elementos"
+                >
+
+                <ImageView
+                    android:id="@+id/ivHuesoBlancoCV"
+                    android:layout_width="35dp"
+                    android:layout_height="38dp"
+                    android:layout_margin="@dimen/margin_card"
+                    android:src="@drawable/hueso_blanco_50"
+                    />
+
+                <TextView
+                    android:id="@+id/tvNombrePerroCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pnombre"
+                    android:textSize="@dimen/nombre_cardview"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/margin_card"
+                    />
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/espacio_elementos">
+
+                <TextView
+                    android:id="@+id/tvNumeroHuesoCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_card"
+                    android:text="@string/numero_hueso"
+                    android:textSize="@dimen/nombre_cardview"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivHuesoAmarilloCV"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+                    android:layout_margin="@dimen/margin_card"
+                    android:src="@drawable/hueso_amarrillo_48"
+                    />
+
+            </GridLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

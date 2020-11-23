@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuOpciones.Activity_About"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/aboutBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="429dp"
+        android:elevation="@dimen/elevation_bar"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="@string/aboutBar"
+            android:paddingTop="@dimen/top_titulo_bar"
+            android:textStyle="bold"
+            android:textSize="@dimen/nombre_mascota"
+            android:textColor="#fff"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:paddingTop="@dimen/top_titulo_bar"
+            android:textStyle="bold"
+            android:textSize="@dimen/nombre_mascota"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/versionApp"
+            android:paddingTop="@dimen/top_titulo_bar"
+            android:textStyle="bold"
+            android:textSize="@dimen/nombre_mascota"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/desarrollador"
+            android:paddingTop="@dimen/top_titulo_bar"
+            android:textStyle="bold"
+            android:textSize="@dimen/nombre_mascota"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ubicacion"
+            android:paddingTop="@dimen/top_titulo_bar"
+            android:textStyle="bold"
+            android:textSize="@dimen/nombre_mascota"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Año"
+            android:paddingTop="@dimen/top_titulo_bar"
+            android:textStyle="bold"
+            android:textSize="@dimen/nombre_mascota"
+            android:textColor="@color/black"
+            />
+
+</LinearLayout>

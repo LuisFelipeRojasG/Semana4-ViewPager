@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <!-- Contenedor de la barra principal y el tabLayout  -->
+   <com.google.android.material.appbar.AppBarLayout
+       android:id="@+id/appBarLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/tbBarraPrincipal"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="@color/design_default_color_primary"
+          android:elevation="@dimen/elevation_bar"
+          app:layout_scrollFlags="scroll|enterAlways"
+          tools:context=".MascotasFavoritas"
+          >
+
+         <TextView
+             android:layout_width="220dp"
+             android:layout_height="50dp"
+             android:layout_row="0"
+             android:layout_column="0"
+             android:text="@string/nombre_principalBar"
+             android:textAlignment="gravity"
+             android:paddingTop="@dimen/top_titulo_bar"
+             android:textColor="#fff"
+             android:textSize="@dimen/nombre_mascota"
+             android:textStyle="bold"
+             android:background="@color/design_default_color_primary"
+             />
+
+         <ImageView
+             android:id="@+id/blackStar"
+             android:src="@drawable/ic_star"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             />
+
+      </androidx.appcompat.widget.Toolbar>
+
+      <com.google.android.material.tabs.TabLayout
+          android:id="@+id/tabLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:tabMode="fixed"
+          app:tabGravity="fill"
+          app:tabBackground="@color/colorPrimary"
+          app:tabTextColor="@color/colorBlanco"
+          app:tabIndicatorColor="@color/colorRojo"/>
+   </com.google.android.material.appbar.AppBarLayout>
+
+   <!-- Contenedor donde iran los fragmentos -->
+   <androidx.viewpager.widget.ViewPager
+      android:id="@+id/viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+       app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+      />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

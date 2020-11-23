@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">30dp</dimen>
+    <dimen name="nombre_mascota">20dp</dimen>
+    <dimen name="margin_card">5dp</dimen>
+    <dimen name="elevation_card">5dp</dimen>
+    <dimen name="corner_radius_cardview">4dp</dimen>
+    <dimen name="nombre_cardview">30dp</dimen>
+    <dimen name="espacio_elementos">20dp</dimen>
+    <dimen name="elevation_bar">4dp</dimen>
+    <dimen name="top_titulo_bar">10dp</dimen>
+
+</resources>
